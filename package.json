@@ -1,0 +1,15 @@
+{
+    "name": "flat-attack-theme",
+    "title": "Flat Attack",
+    "description": "Flat color light theme for Brackets.",
+    "homepage": "https://github.com/ostranme/flat-attack",
+    "version": "1.0.0",
+    "author": "Mark Ostrander (http://github.com/ostranme)",
+    "license": "MIT",
+    "theme": {
+        "file": "theme.less",
+        "dark": false,
+        "addModeClass": true
+    },
+    "keywords": ["theme"]
+}
