@@ -27,23 +27,23 @@
 .CodeMirror-focused .CodeMirror-activeline {
     .CodeMirror-gutter-elt {
         background: @white;
-        color: #7E3661;
+        color: @foreground;
     }
     .inline-widget .CodeMirror-gutter-elt {
-        color: #767676;    
+        color: #767676;
     }
 }
 
-.cm-atom, .cm-string, .cm-string-2, .cm-hr {color: #7E3661;}
-.cm-number, .cm-attribute, .cm-plus {color: #F62459  ;}
-.cm-def, .cm-property {color: #019875 ;}
+.cm-atom, .cm-string, .cm-string-2, .cm-hr {color: #D35400;}
+.cm-number, .cm-attribute, .cm-plus {color: #049372;}
+.cm-def, .cm-property {color: #913D88;}
 .cm-variable, .cm-variable-2, .cm-variable-3, .cm-operator, .cm-meta, .cm-bracket {color: @foreground;}
-.cm-comment {color: #95a5a6;} 
+.cm-comment {color: #6C7A89;}
 .cm-error, .cm-minus {color: #dc322f;}
 .cm-header {color: #446CB3;}
-.cm-link {color: #b77fdb; text-decoration: none;}
+.cm-link {color: #D35400; text-decoration: none;}
 .cm-rangeinfo {color: #6c71c4;}
-.cm-keyword, .cm-qualifier, .cm-builtin, .cm-tag, .cm-quote {color: #2574A9;}
+.cm-keyword, .cm-qualifier, .cm-builtin, .cm-tag, .cm-quote {color: #3A539B;}
 
 /* Extra CSS */
 
@@ -55,7 +55,7 @@
 }
 
 .CodeMirror-cursor {
-    border-left: 1px solid #F62459  !important;
+    border-left: 1px solid #212121  !important;
 }
 
 .CodeMirror-gutters {
@@ -64,20 +64,20 @@
 }
 
 .CodeMirror-linenumber {
-    color: #674172;
+    color: #212121;
 }
 
 .CodeMirror .CodeMirror-selected {
-    background: #333f48;
+    background: @white;
 }
 .CodeMirror-focused .CodeMirror-selected {
-    background: #FDE3A7;
+    background: @white;
 }
 
 .CodeMirror-matchingbracket, .CodeMirror-matchingtag {
     /* Ensure visibility against gray inline editor background */
-    background-color: #D2D7D3;
-    color: #2574A9 !important;
+    background-color: #67809F;
+    color: @background !important;
 }
 
 .CodeMirror-overwrite .CodeMirror-cursor {
@@ -95,4 +95,56 @@
 
 .view-pane .image-view {
     color: @foreground;
+}
+
+
+/**
+ * Extensions
+ * ==========
+ */
+
+/* Show Whitespace (https://github.com/DennisKehrig/brackets-show-whitespace)*/
+.CodeMirror .cm-dk-whitespace-space::before,
+.CodeMirror .cm-dk-whitespace-tab::before,
+.CodeMirror .cm-dk-whitespace-leading-space::before,
+.CodeMirror .cm-dk-whitespace-leading-tab::before,
+.CodeMirror .cm-dk-whitespace-trailing-space::before,
+.CodeMirror .cm-dk-whitespace-trailing-tab::before {
+    background-color: #ABB7B7 !important;
+}
+
+/* Code Folding (https://github.com/thehogfather/brackets-code-folding)*/
+.CodeMirror-foldgutter-open:after {
+    content: "\25BD";
+    font-size: 1.5em;
+    color: #3A539B;
+}
+
+.CodeMirror-foldgutter-folded:after {
+    content: "\25B7";
+    background-color: transparent !important;
+    font-size: 1.5em;
+    color: #E26A6A !important;
+}
+
+.CodeMirror-foldgutter-folded {
+    padding: 0;
+}
+
+.CodeMirror-foldgutter-open {
+    padding-top: 1px;
+}
+
+.CodeMirror-foldmarker {
+    display: inline-block;
+    border-radius: 0.25em;
+    padding: 0 2px;
+    border: 0px;
+    font-size: .7em;
+    color: @white !important;
+    background-color: #E26A6A;
+    &::after {
+        content: '\2022\2022\2022';
+        position: relative;
+    }
 }
