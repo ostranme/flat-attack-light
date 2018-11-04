@@ -1,17 +1,17 @@
-#Brackets Theme: Flat Attack Light
+# Brackets Theme: Flat Attack Light
 
 Light theme using flat colors for Brackets
 
-###HTML
+### HTML
 ![HTML Screenshot](https://github.com/ostranme/flat-attack-light/blob/master/screenshots/html.png)
 
-###CSS
+### CSS
 ![CSS Screenshot](https://github.com/ostranme/flat-attack-light/blob/master/screenshots/css.png)
 
-###JS
+### JS
 ![JS Screenshot](https://github.com/ostranme/flat-attack-light/blob/master/screenshots/js.png)
 
-###Installation
+### Installation
 ---
 **This extension requires Brackets 1.0.0 or newer**
 
@@ -21,14 +21,14 @@ Light theme using flat colors for Brackets
 4. Search for "Flat Attack Light"
 5. Click "Install"
 
-###Extension Support
+### Extension Support
 ---
 - [Show Whitespace](https://github.com/DennisKehrig/brackets-show-whitespace)
 - [Code folding](https://github.com/thehogfather/brackets-code-folding)
 
 Feel free to open an issue if you want more extension support
 
-###License
+### License
 ---
 
 The MIT License. Read [LICENSE](LICENSE) for further information.
